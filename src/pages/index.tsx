@@ -1,13 +1,10 @@
-import { NextPage } from 'next';
-import React from 'react';
-import Script from 'next/script';
-import { MainLayout } from '~/components/layouts/MainLayout';
-import { DarkBanner } from '~/components/partials';
 import { useTheme } from 'next-themes';
+import Script from 'next/script';
+import React from 'react';
+import { MainLayout } from '~/components/layouts/MainLayout';
+import { About, DarkBanner, LightBanner } from '~/components/partials';
 import ClientOnly from '~/components/shared/ClientOnly';
-import LightBanner from '~/components/partials/LightBanner';
 import AnimateBird from '~/utils/AnimateBird';
-import AnimateStar from '~/utils/AnimationStar';
 import AnimateSpace from '~/utils/AnimateSpace';
 
 const Home: React.FC = () => {
@@ -43,6 +40,7 @@ const Home: React.FC = () => {
                         </>
                     )}
                 </ClientOnly>
+                <About />
             </MainLayout>
         </>
     );
