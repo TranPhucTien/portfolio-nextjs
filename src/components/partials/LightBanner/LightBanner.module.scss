@@ -1,0 +1,78 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    cursor: default;
+
+    h1 {
+        font-size: 6rem;
+        font-family: var(--secondary-font);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.description {
+    width: 100%;
+    margin: 12px 0;
+
+    text-align: center;
+    font-size: 7rem;
+    font-family: var(--secondary-font);
+
+    span {
+        --tw-gradient-from: #4ade80;
+        --tw-gradient-to: #3b82f6;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+        color: transparent;
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: text 2s linear infinite;
+    }
+}
+
+.quote {
+    width: 100%;
+    a {
+        color: #3b82f6;
+    }
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@keyframes text {
+    0% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+    50% {
+        background-size: 200% 200%;
+        background-position: right center;
+    }
+    100% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+}

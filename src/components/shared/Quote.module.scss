@@ -1,0 +1,19 @@
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // fill: inherit;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    a {
+        color: #facc15;
+        text-decoration: none;
+    }
+}

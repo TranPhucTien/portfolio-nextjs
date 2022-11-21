@@ -1,0 +1,88 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 38%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 18rem;
+
+    overflow: hidden;
+    cursor: default;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-size: 3.8rem;
+        font-family: var(--secondary-font);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.description {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 100%;
+
+    text-align: center;
+    font-size: 6rem;
+    font-family: var(--secondary-font);
+
+    transform: translate(-50%, -50%);
+
+    span {
+        --tw-gradient-from: #4ade80;
+        --tw-gradient-to: #3b82f6;
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+
+        color: transparent;
+        background-image: linear-gradient(to right, var(--tw-gradient-stops));
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: text 2s linear infinite;
+    }
+}
+
+.quote {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70%;
+    width: 100%;
+}
+
+.canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+@keyframes text {
+    0% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+    50% {
+        background-size: 200% 200%;
+        background-position: right center;
+    }
+    100% {
+        background-size: 200% 200%;
+        background-position: left center;
+    }
+}

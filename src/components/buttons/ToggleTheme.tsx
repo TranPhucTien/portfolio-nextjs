@@ -2,7 +2,7 @@ import { MoonIcon, SunIcon } from '@heroicons/react/outline';
 import classNames from 'classnames/bind';
 import { useTheme } from 'next-themes';
 import React from 'react';
-import ClientOnly from '../shared/CilentOnly';
+import ClientOnly from '../shared/ClientOnly';
 import styles from './ToggleTheme.module.scss';
 
 const cx = classNames.bind(styles);
