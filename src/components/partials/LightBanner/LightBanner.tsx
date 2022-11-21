@@ -30,7 +30,7 @@ const LightBanner: React.FC = () => {
                 </motion.h2>
                 <Quote className={cx('quote')} />
             </section>
-            <canvas className={cx('canvas')} id="canvas"></canvas>
+            {/* <canvas className={cx('canvas')} id="canvas"></canvas> */}
         </>
     );
 };

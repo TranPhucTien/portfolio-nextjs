@@ -1,14 +1,21 @@
 import { useTheme } from 'next-themes';
 import Script from 'next/script';
 import React from 'react';
+import { useEffectOnce } from 'usehooks-ts';
 import { MainLayout } from '~/components/layouts/MainLayout';
 import { About, DarkBanner, LightBanner } from '~/components/partials';
+import Skills from '~/components/partials/Skills';
 import ClientOnly from '~/components/shared/ClientOnly';
 import AnimateBird from '~/utils/AnimateBird';
 import AnimateSpace from '~/utils/AnimateSpace';
+import { renderCanvas } from '~/utils/renderCanvas';
 
 const Home: React.FC = () => {
     const { theme } = useTheme();
+
+    useEffectOnce(() => {
+        renderCanvas();
+    });
 
     if (typeof window !== 'undefined') {
         if (theme === 'light') {
@@ -40,8 +47,11 @@ const Home: React.FC = () => {
                         </>
                     )}
                 </ClientOnly>
+
                 <About />
+                <Skills />
             </MainLayout>
+            <canvas className='canvas' id="canvas"></canvas>
         </>
     );
 };
