@@ -15,7 +15,11 @@ const Skills: React.FC = () => {
                 {skillList.focusOn.map((skill, index) => (
                     <li key={index} className="item">
                         <Link className={cx('link')} href={skill.link}>
-                            <img src={skill.image} alt={skill.name} />
+                            <img
+                                className={cx('transition-default')}
+                                src={skill.image}
+                                alt={skill.name}
+                            />
                             {skill.name}
                         </Link>
                     </li>
@@ -26,7 +30,11 @@ const Skills: React.FC = () => {
                 {skillList.ableAdaptTo.map((skill, index) => (
                     <li key={index} className={cx('user-select-none')}>
                         <Link className={cx('link')} href={skill.link}>
-                            <img src={skill.image} alt={skill.name} />
+                            <img
+                                className={cx('transition-default')}
+                                src={skill.image}
+                                alt={skill.name}
+                            />
                             {skill.name}
                         </Link>
                     </li>

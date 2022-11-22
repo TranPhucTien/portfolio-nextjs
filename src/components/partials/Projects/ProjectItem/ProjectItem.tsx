@@ -26,11 +26,12 @@ const ProjectItem: React.FC<Props> = (props) => {
 
     return (
         <div className={cx('wrapper', { 'flex-row-reverse': isReverse })}>
-            <div className={cx('img')}>
-                <Atropos shadow={false}>
+            <Atropos shadow={false}>
+                <div className={cx('img')}>
+                    <div className="img-border"></div>
                     <img src={thumbnail} alt={name} />
-                </Atropos>
-            </div>
+                </div>
+            </Atropos>
             <div className={cx('content')}>
                 <h3 className={cx('name')}>{name}</h3>
                 <p className={cx('desc')}>{desc}</p>
@@ -40,6 +41,7 @@ const ProjectItem: React.FC<Props> = (props) => {
                         <li className={cx('item')}>
                             <Link className={cx('link')} href={techStack.link}>
                                 <img
+                                    className={cx('transition-default')}
                                     src={techStack.image}
                                     alt={techStack.name}
                                 />
