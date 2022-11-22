@@ -10,11 +10,11 @@
     left: 50%;
     top: 38%;
 
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 18rem;
-    height: 18rem;
+    width: 100%;
+    text-align: center;
 
     overflow: hidden;
     cursor: default;

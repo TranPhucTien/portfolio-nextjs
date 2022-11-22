@@ -14,22 +14,22 @@ const Navbar: React.FC = () => {
                     PhucTien
                 </Link>
                 <ul className={cx('list')}>
-                    <li>
+                    <li className={cx('user-select-none')}>
                         <Link href="#about" scroll={false}>
                             About
                         </Link>
                     </li>
-                    <li>
+                    <li className={cx('user-select-none')}>
                         <Link href="#projects" scroll={false}>
                             Projects
                         </Link>
                     </li>
-                    <li>
+                    <li className={cx('user-select-none')}>
                         <Link href="#resume" scroll={false}>
                             Resume
                         </Link>
                     </li>
-                    <li>
+                    <li className={cx('user-select-none')}>
                         <Link href="#contact" scroll={false}>
                             Contact
                         </Link>

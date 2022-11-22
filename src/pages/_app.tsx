@@ -1,3 +1,4 @@
+import 'atropos/css';
 import '~/styles/globals.scss';
 
 import { ThemeProvider } from 'next-themes';
@@ -18,7 +19,7 @@ type AppPropsWithLayout = AppProps & {
 function MyApp({ Component, pageProps: { ...pageProps } }: AppPropsWithLayout) {
     const getLayout =
         Component.getLayout ?? ((page) => <MainLayout>{page}</MainLayout>);
-        
+
     return (
         <ThemeProvider attribute="class">
             {getLayout(<Component {...pageProps} />)}

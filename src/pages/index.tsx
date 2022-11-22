@@ -3,7 +3,12 @@ import Script from 'next/script';
 import React from 'react';
 import { useEffectOnce } from 'usehooks-ts';
 import { MainLayout } from '~/components/layouts/MainLayout';
-import { About, DarkBanner, LightBanner } from '~/components/partials';
+import {
+    About,
+    DarkBanner,
+    LightBanner,
+    Projects
+} from '~/components/partials';
 import Skills from '~/components/partials/Skills';
 import ClientOnly from '~/components/shared/ClientOnly';
 import AnimateBird from '~/utils/AnimateBird';
@@ -46,12 +51,12 @@ const Home: React.FC = () => {
                             <AnimateSpace />
                         </>
                     )}
+                    <About />
+                    <Skills />
+                    <Projects />
                 </ClientOnly>
-
-                <About />
-                <Skills />
             </MainLayout>
-            <canvas className='canvas' id="canvas"></canvas>
+            <canvas className="canvas" id="canvas"></canvas>
         </>
     );
 };

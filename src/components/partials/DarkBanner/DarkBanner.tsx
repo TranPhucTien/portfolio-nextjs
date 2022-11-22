@@ -42,7 +42,11 @@ const DarkBanner: React.FC = () => {
         <>
             <section className={cx('wrapper')} id="banner" ref={bannerRef}>
                 <div className={cx('title')}>
-                    <h1 className={cx('transition-default')}>Phuc Tien</h1>
+                    <h1
+                        className={cx('transition-default', 'user-select-none')}
+                    >
+                        Phuc Tien
+                    </h1>
                 </div>
                 <motion.h2
                     className={cx('description')}

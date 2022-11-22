@@ -8,7 +8,6 @@
 }
 
 .title {
-    font-family: var(--secondary-font);
     font-size: 3.8rem;
 }
 
@@ -29,6 +28,8 @@
 }
 
 .list li {
+    user-select: none;
+
     img {
         width: 8rem;
         height: 8rem;

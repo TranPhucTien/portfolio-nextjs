@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: var(--header-height);
+}
+
+.inner {
+    width: 100%;
+}

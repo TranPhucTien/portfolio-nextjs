@@ -6,7 +6,7 @@ import { skillList } from '~/constants/skillsApi';
 
 const cx = classNames.bind(styles);
 
-const Skills = () => {
+const Skills: React.FC = () => {
     return (
         <section id="skills" className={cx('wrapper')}>
             <h2 className={cx('title')}>My Skills</h2>
@@ -24,7 +24,7 @@ const Skills = () => {
             <span className={cx('desc')}>Able to adapt</span>
             <ul className={cx('list', 'grid-2')}>
                 {skillList.ableAdaptTo.map((skill, index) => (
-                    <li key={index} className="item">
+                    <li key={index} className={cx('user-select-none')}>
                         <Link className={cx('link')} href={skill.link}>
                             <img src={skill.image} alt={skill.name} />
                             {skill.name}

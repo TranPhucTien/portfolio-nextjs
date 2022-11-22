@@ -101,6 +101,18 @@ button {
     pointer-events: none;
 }
 
+.user-select-none {
+    -webkit-user-select: none; /* Chrome all / Safari all */
+    -moz-user-select: none; /* Firefox all */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Likely future */
+}
+
+.title {
+    font-size: 3.8rem;
+    font-family: var(--secondary-font);
+}
+
 @keyframes fade-in-animation {
     0% {
         opacity: 0;
