@@ -25,7 +25,11 @@ const Navbar: React.FC = () => {
                         </Link>
                     </li>
                     <li className={cx('user-select-none')}>
-                        <Link href="#resume" scroll={false}>
+                        <Link
+                            href="/assets/Tran_Phuc_Tien-Resume.pdf"
+                            download={true}
+                            target="_blank"
+                        >
                             Resume
                         </Link>
                     </li>

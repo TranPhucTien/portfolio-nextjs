@@ -44,7 +44,7 @@
 
     span {
         --tw-gradient-from: #4ade80;
-        --tw-gradient-to: #3b82f6;
+        --tw-gradient-to: var(--blue);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 
         color: transparent;

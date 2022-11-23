@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './About.module.scss';
-import avatar from '~/assets/imgs/avatar.jpg';
 
 const cx = classNames.bind(styles);
 
@@ -9,7 +8,7 @@ const About = () => {
     return (
         <section id="about" className={cx('wrapper')}>
             <div className={cx('image')}>
-                <img src={avatar.src} alt="avatar" />
+                <img src="/assets/imgs/avatar.jpg" alt="avatar" />
             </div>
             <div className={cx('content')}>
                 <h2 className={cx('title')}>Who am I?</h2>

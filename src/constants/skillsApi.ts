@@ -66,4 +66,4 @@ const skillList: SkillList = {
     ],
 };
 
-export { skillList };
+export default skillList;

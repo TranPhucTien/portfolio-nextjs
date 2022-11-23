@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Projects.module.scss';
 import ProjectItem from './ProjectItem';
-import projectList from '~/constants/projectApi';
+import { projectList } from '~/constants';
 
 const cx = classNames.bind(styles);
 

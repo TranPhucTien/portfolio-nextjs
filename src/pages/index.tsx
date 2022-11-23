@@ -2,15 +2,15 @@ import { useTheme } from 'next-themes';
 import Script from 'next/script';
 import React from 'react';
 import { useEffectOnce } from 'usehooks-ts';
-import { MainLayout } from '~/components/layouts/MainLayout';
 import {
     About,
     DarkBanner,
     LightBanner,
-    Projects
+    Projects,
 } from '~/components/partials';
 import Skills from '~/components/partials/Skills';
 import ClientOnly from '~/components/shared/ClientOnly';
+import Head from '~/components/shared/Head';
 import AnimateBird from '~/utils/AnimateBird';
 import AnimateSpace from '~/utils/AnimateSpace';
 import { renderCanvas } from '~/utils/renderCanvas';
@@ -38,24 +38,23 @@ const Home: React.FC = () => {
                 src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
                 strategy="beforeInteractive"
             />
-            <MainLayout>
-                <ClientOnly>
-                    {theme === 'light' ? (
-                        <>
-                            <LightBanner />
-                            <AnimateBird />
-                        </>
-                    ) : (
-                        <>
-                            <DarkBanner />
-                            <AnimateSpace />
-                        </>
-                    )}
-                    <About />
-                    <Skills />
-                    <Projects />
-                </ClientOnly>
-            </MainLayout>
+            <Head />
+            <ClientOnly>
+                {theme === 'light' ? (
+                    <>
+                        <LightBanner />
+                        <AnimateBird />
+                    </>
+                ) : (
+                    <>
+                        <DarkBanner />
+                        <AnimateSpace />
+                    </>
+                )}
+                <About />
+                <Skills />
+                <Projects />
+            </ClientOnly>
             <canvas className="canvas" id="canvas"></canvas>
         </>
     );

@@ -35,7 +35,7 @@
 
     span {
         --tw-gradient-from: #4ade80;
-        --tw-gradient-to: #3b82f6;
+        --tw-gradient-to: var(--blue);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 
         color: transparent;
@@ -49,7 +49,7 @@
 .quote {
     width: 100%;
     a {
-        color: #3b82f6;
+        color: var(--blue);
     }
 }
 

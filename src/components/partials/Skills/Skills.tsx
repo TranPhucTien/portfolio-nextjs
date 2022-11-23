@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import styles from './Skills.module.scss';
 import Link from 'next/link';
-import { skillList } from '~/constants/skillsApi';
+import { skillList } from '~/constants';
 
 const cx = classNames.bind(styles);
 
