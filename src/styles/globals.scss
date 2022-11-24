@@ -9,7 +9,7 @@
     --blue: #3b82f6;
 
     --header-height: 70px;
-    --header-width: 677px;
+    --header-width: 700px;
 
     --primary-font: 'Nunito', sans-serif;
     --secondary-font: 'League Spartan', sans-serif;
@@ -55,6 +55,13 @@ body {
     border-radius: 1rem;
     --tw-bg-opacity: 1;
     background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+summary {
+    list-style: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -141,5 +148,12 @@ button {
     100% {
         background-size: 200% 200%;
         background-position: left center;
+    }
+}
+
+// Tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-width: 576px;
     }
 }

@@ -2,27 +2,42 @@
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#2b1055, #7597de);
+
+    &.dark {
+        background: linear-gradient(#2b1055, #7597de);
+    }
+
+    &.light {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .title {
-    position: absolute;
-    left: 50%;
-    top: 38%;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    text-align: center;
-
     overflow: hidden;
+    text-align: center;
     cursor: default;
-    transform: translate(-50%, -50%);
+
+    &.dark {
+        position: absolute;
+        left: 50%;
+        top: 38%;
+        transform: translate(-50%, -50%);
+    }
 
     h1 {
-        font-size: 3.8rem;
+        font-size: 6rem;
         font-family: var(--secondary-font);
+
+        &.dark {
+            font-size: 3.8rem;
+        }
 
         &:hover {
             transform: scale(1.1);
@@ -31,16 +46,22 @@
 }
 
 .description {
-    position: absolute;
-    left: 50%;
-    top: 60%;
     width: 100%;
-
     text-align: center;
-    font-size: 6rem;
+    font-size: 7rem;
     font-family: var(--secondary-font);
 
-    transform: translate(-50%, -50%);
+    &.dark {
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        font-size: 6rem;
+    }
+
+    &.light {
+        margin: 12px 0;
+    }
 
     span {
         --tw-gradient-from: #4ade80;
@@ -56,11 +77,20 @@
 }
 
 .quote {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 70%;
     width: 100%;
+
+    &.dark {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+    }
+
+    &.light {
+        a {
+            color: var(--blue);
+        }
+    }
 }
 
 .canvas {
@@ -84,5 +114,23 @@
     100% {
         background-size: 200% 200%;
         background-position: left center;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 739px) {
+    .description {
+        font-size: 4.8rem !important;
+        line-height: 1;
+    }
+    .quote {
+        
+    }
+}
+
+// Tablet
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .description {
+        font-size: 4.8rem;
     }
 }

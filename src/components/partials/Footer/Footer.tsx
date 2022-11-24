@@ -11,10 +11,11 @@ const Footer: React.FC = () => {
         <div className={cx('wrapper')} id="contact">
             <h3 className={cx('title')}>Easy to find me</h3>
             <ul className={cx('list')}>
-                {contactList.map((item) => {
+                {contactList.map((item, index) => {
                     const Icon = item.icon;
+
                     return (
-                        <li className={cx('item', 'transition-default')}>
+                        <li className={cx('item', 'transition-default')} key={index}>
                             <Link
                                 href={item.link}
                                 target="_blank"

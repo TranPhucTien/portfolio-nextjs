@@ -3,7 +3,7 @@
     align-items: center;
     margin: 0 auto;
     max-width: var(--header-width);
-    padding-top: var(--header-height);
+    padding: var(--header-height) 15px 0 15px;
 }
 
 .image {
@@ -25,5 +25,17 @@
     a {
         color: var(--blue);
         text-decoration: none;
+    }
+}
+
+// Mobile
+@media only screen and (max-width: 739px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .content {
+        h2 {
+            text-align: center;
+        }
     }
 }

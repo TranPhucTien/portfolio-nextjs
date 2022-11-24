@@ -17,7 +17,7 @@ const About = () => {
                     Full-stack developer in the future. Now I am more focused on
                     JavaScript and the front-end side of things where I am using
                     ReactJS to create beautiful and reusable user interfaces. I
-                    love coding, sports, anime and manga
+                    love coding, sports, anime and manga.
                 </p>
             </div>
         </section>

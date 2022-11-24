@@ -2,6 +2,7 @@ import React, { ReactNode, useState } from 'react';
 import { Footer, Navbar } from '../partials';
 import { ScrollerMotion } from 'scroller-motion';
 import { useEffectOnce, useEventListener } from 'usehooks-ts';
+import ClientOnly from '../shared/ClientOnly';
 
 interface Props {
     children: ReactNode;
@@ -25,7 +26,9 @@ export const MainLayout = ({ children }: Props) => {
             </header>
             <main>{children}</main>
             <footer>
-                <Footer />
+                <ClientOnly>
+                    <Footer />
+                </ClientOnly>
             </footer>
         </>
     );
