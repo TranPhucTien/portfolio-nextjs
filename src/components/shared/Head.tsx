@@ -12,7 +12,7 @@ interface Props {
 const Head: React.FC<Props> = ({
     title = "Phuc Tien's portfolio",
     description = "Phuc Tien's portfolio",
-    image = 'https://drive.google.com/file/d/1Q1BqNCPVCP5VhceLLic4Zjhkn3GAdbig/view?usp=sharing',
+    image = '/assets/imgs/portfolio.png',
 }) => {
     const { asPath } = useRouter();
 
