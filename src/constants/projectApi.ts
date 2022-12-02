@@ -20,7 +20,7 @@ const projectList: Array<Project> = [
     },
     {
         name: 'Music Player',
-        desc: 'This is portfolio for me',
+        desc: 'A music player',
         thumbnail: '/assets/imgs/music.png',
         techStackList: [iconApi.html, iconApi.css, iconApi.js],
         liveDemoLink: 'https://tranphuctien.github.io/music_player',
