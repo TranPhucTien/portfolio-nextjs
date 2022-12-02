@@ -5,41 +5,26 @@ const projectList: Array<Project> = [
     {
         name: 'Portfolio',
         desc: 'This is portfolio for me',
-        thumbnail:
-            'https://cdn.pixabay.com/photo/2017/11/29/18/54/leaf-2986837__340.jpg',
-        techStackList: [
-            iconApi.sass,
-            iconApi.react,
-            iconApi.next,
-        ],
-        liveDemoLink: 'test',
-        githubLink: 'test',
+        thumbnail: '/assets/imgs/portfolio.png',
+        techStackList: [iconApi.sass, iconApi.react, iconApi.next],
+        liveDemoLink: 'https://phuc-tien-portfolio.vercel.app',
+        githubLink: 'https://github.com/TranPhucTien/portfolio-nextjs',
     },
     {
-        name: 'Portfolio',
-        desc: 'This is portfolio for me',
-        thumbnail:
-            'https://cdn.pixabay.com/photo/2017/11/29/18/54/leaf-2986837__340.jpg',
-        techStackList: [
-            iconApi.sass,
-            iconApi.react,
-            iconApi.next,
-        ],
-        liveDemoLink: 'test',
-        githubLink: 'test',
+        name: 'FoodG',
+        desc: 'Order Food Delivery Online. however, now the API is broken :(',
+        thumbnail: '/assets/imgs/foodg.png',
+        techStackList: [iconApi.sass, iconApi.react],
+        liveDemoLink: 'https://foodg.vercel.app',
+        githubLink: 'https://github.com/TranPhucTien/foodg',
     },
     {
-        name: 'Portfolio',
+        name: 'Music Player',
         desc: 'This is portfolio for me',
-        thumbnail:
-            'https://cdn.pixabay.com/photo/2017/11/29/18/54/leaf-2986837__340.jpg',
-        techStackList: [
-            iconApi.sass,
-            iconApi.react,
-            iconApi.next,
-        ],
-        liveDemoLink: 'test',
-        githubLink: 'test',
+        thumbnail: '/assets/imgs/music.png',
+        techStackList: [iconApi.html, iconApi.css, iconApi.js],
+        liveDemoLink: 'https://tranphuctien.github.io/music_player',
+        githubLink: 'https://github.com/TranPhucTien/music_player',
     },
 ];
 
