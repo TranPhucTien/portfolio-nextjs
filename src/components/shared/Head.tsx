@@ -12,7 +12,7 @@ interface Props {
 const Head: React.FC<Props> = ({
     title = "Phuc Tien's portfolio",
     description = "Phuc Tien's portfolio",
-    image = '/assets/imgs/portfolio.png',
+    image = 'https://phuc-tien-portfolio.vercel.app/assets/imgs/portfolio.png',
 }) => {
     const { asPath } = useRouter();
 
